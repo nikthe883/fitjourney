@@ -1,0 +1,17 @@
+{% include 'base.html' %}
+
+<p> This is our form page</p>
+
+
+<br>
+
+<form method="POST", autocomplete='off', enctype='multiplart/form-data'>
+
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+    <input type = 'submit', value="Submit">
+
+
+</form>
